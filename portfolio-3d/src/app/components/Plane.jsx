@@ -16,7 +16,7 @@ export const Plane = ({ isRotating, ...props }) => {
   }, [actions, isRotating]);
 
   return (
-    <mesh {...props}>
+    <mesh {...props} ref={ref}>
       <primitive object={scene} />
     </mesh>
   );

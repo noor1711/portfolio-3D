@@ -21,6 +21,7 @@ export const Model = ({
   const islandRef = useRef();
   const { gl, viewport } = useThree();
   const { nodes, materials } = useGLTF("/3d/island.glb");
+  const [currentStage, setCurrentStageState] = React.useState(1);
 
   // Use a ref for the last mouse x position
   const lastX = useRef(0);
